@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Dashboard | Smart Farming</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="styles.css" rel="stylesheet" />
+</head>
+<body class="sf-body">
+  <header class="sf-topbar">
+    <div class="sf-brand">
+      <span class="sf-logo-circle">SF</span>
+      <div>
+        <div class="sf-brand-title">Smart Farming</div>
+        <div class="sf-brand-sub">Admin Dashboard</div>
+      </div>
+    </div>
+    <nav class="sf-nav">
+      <a href="index.html" class="sf-nav-link">Home</a>
+      <a href="farmer-login.html" class="sf-nav-link">Farmer Login</a>
+      <a href="admin-dashboard.html" class="sf-nav-link sf-nav-link--active">Admin</a>
+    </nav>
+  </header>
+
+  <main class="sf-main sf-main--dashboard">
+    <section class="sf-dashboard-header">
+      <div>
+        <h1 class="sf-dashboard-title">System Overview</h1>
+        <p class="sf-dashboard-sub">
+          Admin panel se aap farmers, disease detection aur model health ka high level view dekh sakte hain.
+        </p>
+      </div>
+      <div class="sf-pill-row">
+        <span class="sf-pill">Admin: admin@sf.com</span>
+        <span class="sf-pill sf-pill--soft">Demo Data</span>
+      </div>
+    </section>
+
+    <section class="sf-dashboard-grid">
+      <article class="sf-card">
+        <h2 class="sf-card-heading">Usage Snapshot</h2>
+        <div class="sf-metric-row">
+          <div class="sf-metric-card">
+            <span class="sf-metric-label">Registered Farmers</span>
+            <span class="sf-metric-value" id="adminFarmersCount">0</span>
+          </div>
+          <div class="sf-metric-card">
+            <span class="sf-metric-label">Disease Scans (Demo)</span>
+            <span class="sf-metric-value">38</span>
+          </div>
+          <div class="sf-metric-card">
+            <span class="sf-metric-label">Avg Confidence</span>
+            <span class="sf-metric-value">89%</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="sf-card sf-card--wide">
+        <h2 class="sf-card-heading">Sample Disease Reports</h2>
+        <div class="sf-table-wrapper">
+          <table class="sf-table">
+            <thead>
+              <tr>
+                <th>Farmer</th>
+                <th>Crop</th>
+                <th>Disease</th>
+                <th>Confidence</th>
+                <th>Risk Level</th>
+                <th>Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Ramesh Kumar</td>
+                <td>Potato</td>
+                <td>Early Blight</td>
+                <td>91%</td>
+                <td>High</td>
+                <td>2025-12-01</td>
+              </tr>
+              <tr>
+                <td>Sunita Devi</td>
+                <td>Rice</td>
+                <td>Blast</td>
+                <td>88%</td>
+                <td>Medium</td>
+                <td>2025-11-29</td>
+              </tr>
+              <tr>
+                <td>Mohit Sharma</td>
+                <td>Wheat</td>
+                <td>Leaf Rust</td>
+                <td>93%</td>
+                <td>High</td>
+                <td>2025-11-25</td>
+              </tr>
+              <tr>
+                <td>Anita Yadav</td>
+                <td>Maize</td>
+                <td>Blight</td>
+                <td>86%</td>
+                <td>Medium</td>
+                <td>2025-11-20</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="sf-small">
+          Future scope: yahan se real backend database se farmers list, disease reports, model logs fetch kiye ja
+          sakte hain.
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="sf-footer">
+    © 2025 Smart Farming Advisory System · Admin Dashboard
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
